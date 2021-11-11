@@ -4,18 +4,23 @@ h1 {
     color: mediumslateblue;
     font-style: italic;
 }
-h2::before {
+h2::after {
     content: url(https://media4.giphy.com/media/klnStZybXquM5OC3JN/200.gif);    
   }
 
-p {
+p::first-line {
     color:orchid;
+    font-variant: small-caps;
 }
 
 div > .para {
     text-align: center;
   color: red;
 }
+::marker {
+    color: black;
+    font-size: 23px;
+  }
 
 #secretPara {
     text-align: center;
