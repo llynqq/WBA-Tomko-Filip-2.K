@@ -4,6 +4,9 @@ h1 {
     color: mediumslateblue;
     font-style: italic;
 }
+h2  ::before {
+    content: url(https://media4.giphy.com/media/klnStZybXquM5OC3JN/200.gif);    
+  }
 
 p {
     color:orchid;
