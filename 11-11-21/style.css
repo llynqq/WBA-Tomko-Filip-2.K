@@ -4,7 +4,7 @@ h1 {
     color: mediumslateblue;
     font-style: italic;
 }
-h2  ::before {
+h2::before {
     content: url(https://media4.giphy.com/media/klnStZybXquM5OC3JN/200.gif);    
   }
 
@@ -24,4 +24,10 @@ div > .para {
   }
 div:hover #secretPara {
     display: block;
+  }
+
+
+::selection {
+    color:purple;
+    background:black;
   }
