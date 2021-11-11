@@ -5,7 +5,20 @@ h1 {
     font-style: italic;
 }
 
-div > p {
+p {
+    color:orchid;
+}
+
+div > .para {
     text-align: center;
   color: red;
 }
+
+#secretPara {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+  }
+div:hover #secretPara {
+    display: block;
+  }
