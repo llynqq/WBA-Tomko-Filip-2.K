@@ -18,6 +18,7 @@ div > .para {
 }
 
 #secretPara {
+    text-align: center;
     display: none;
     background-color: yellow;
     padding: 20px;
@@ -31,3 +32,7 @@ div:hover #secretPara {
     color:purple;
     background:black;
   }
+
+a:link {color:blue;}
+a:visited {color: deeppink;}
+a:hover {color:indigo;}
