@@ -1,0 +1,11 @@
+body{background-color: lightyellow;}
+
+h1 {
+    color: mediumslateblue;
+    font-style: italic;
+}
+
+div > p {
+    text-align: center;
+  color: red;
+}
