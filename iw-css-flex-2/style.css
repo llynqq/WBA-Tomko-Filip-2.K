@@ -1,5 +1,55 @@
+body{
+    background-image: url("Cosmic-Gradient-14.jpg");
+    background-size: 100%;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.lorem{
+
+}
+
 .header{
     display: flex;
     width: 100%;
+    justify-content: center;
     background-color: #272141;
+}
+
+.flexbox{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexbox-item{
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+}
+.about-flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-flex p{
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.flexbox-item-1 {
+    width: 25%;
+}
+.flexbox-item-2 {
+    width: 50%;
+}
+.flexbox-item-3 {
+    width: 25%;
 }
