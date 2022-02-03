@@ -1,0 +1,43 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 30vh);
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "info photo photo photo photo" 
+    "comment photo photo photo photo" 
+    "comment tag tag album rotate"
+  }
+  
+  .photo {
+    grid-area: photo;
+    background: yellow;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .info {
+    grid-area: info;
+    background: pink;
+  }
+  
+  .tag {
+    grid-area: tag;
+    background: teal;
+  }
+  
+  .comment {
+    grid-area: comment;
+    background: green;
+  }
+  
+  .album {
+    grid-area: album;
+    background: red;
+  }
+  
+  .rotate {
+    grid-area: rotate;
+    background: blue;
+  }

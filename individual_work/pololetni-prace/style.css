@@ -119,9 +119,8 @@ p{
     box-shadow: 0 0 1.25rem 0px rgba(0,0,0,0.4);
 }
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width:1024px){
     .text-box{
-        left: 45%;
         width: 70%  ;
     }
     .text-box h1{
