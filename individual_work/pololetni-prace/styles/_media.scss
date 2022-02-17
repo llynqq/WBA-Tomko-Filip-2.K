@@ -1,0 +1,29 @@
+@media only screen and (max-width:480px){
+    .text-box{
+        left: 45%;
+        width: 70%;
+        h1{
+            font-size: 1.5rem;    
+        }
+    }
+    nav{
+        padding-right: 15%;
+        img{
+            width: 5rem;
+        }
+    }
+    .nav-links ul li{
+        ul{
+            li{
+                padding: 0 2rem;
+            }
+        }
+        
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .row{
+        flex-direction: column;
+    }
+}
