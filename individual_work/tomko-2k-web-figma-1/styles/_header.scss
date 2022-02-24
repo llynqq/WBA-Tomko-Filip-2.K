@@ -1,0 +1,21 @@
+.bg-header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vh;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: #CBC1B1;
+    .logo{
+        float: left;
+        width: 80px;
+        height: 66.13px;
+        margin: 20px;
+        background: url("/individual_work/tomko-2k-web-figma-1/images/logo.png");
+    }
+    .burger-menu{
+        background: url("/individual_work/tomko-2k-web-figma-1/images/burger-menu.svg");
+    }
+}
