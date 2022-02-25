@@ -1,0 +1,56 @@
+$color: teal;
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 30vh);
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "info photo photo photo photo" 
+    "comment photo photo photo photo" 
+    "comment tag tag album rotate"
+  }
+.container > div{
+      text-align: center;
+  }
+.aircraft {
+  grid-area: photo;
+  background-image: url('https://www.ledgerinsights.com/wp-content/uploads/2019/12/US-airforce-aircraft.2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+  
+.tiger {
+  grid-area: info;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsgkInctfBOLAyaw59T7cG4mw4o0hHwDayFK4t-obtkJxSe31YIENXNsxEoEPW6FvW_kU&usqp=CAU');
+  background-size: cover;
+  background-position: center;
+}
+  
+.building {
+  grid-area: comment;
+  background-image: url('https://i.guim.co.uk/img/media/ac01822e1237b350779e9e41ab69c8bcc8d292ea/0_0_6016_3611/master/6016.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e8ed1dcb5b915acb79446d4bf5202eac');
+  background-size: cover;
+  background-position: center;
+}
+  
+.comment {
+  grid-area: tag;
+  background-image: url('https://www.ledgerinsights.com/wp-content/uploads/2019/12/US-airforce-aircraft.2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+  
+.album {
+  grid-area: album;
+  background-image: url('https://www.ledgerinsights.com/wp-content/uploads/2019/12/US-airforce-aircraft.2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+  
+.rotate {
+  grid-area: rotate;
+  background-image: url('https://www.ledgerinsights.com/wp-content/uploads/2019/12/US-airforce-aircraft.2.jpg');
+  background-size: cover;
+  background-position: center;
+}

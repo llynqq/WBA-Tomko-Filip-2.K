@@ -1,43 +1,73 @@
 .container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 30vh);
-    grid-gap: 1rem;
-    grid-template-areas: 
-    "info photo photo photo photo" 
-    "comment photo photo photo photo" 
-    "comment tag tag album rotate"
-  }
-  
-  .photo {
-    grid-area: photo;
-    background: yellow;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .info {
-    grid-area: info;
-    background: pink;
-  }
-  
-  .tag {
-    grid-area: tag;
-    background: teal;
-  }
-  
-  .comment {
-    grid-area: comment;
-    background: green;
-  }
-  
-  .album {
-    grid-area: album;
-    background: red;
-  }
-  
-  .rotate {
-    grid-area: rotate;
-    background: blue;
-  }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (30vh)[5];
+      grid-template-rows: repeat(5, 30vh);
+  grid-gap: 1rem;
+      grid-template-areas: "info photo photo photo photo"  "comment photo photo photo photo"  "comment tag tag album rotate";
+}
+
+.container > div {
+  text-align: center;
+}
+
+.aircraft {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: photo;
+  background-image: url("https://www.ledgerinsights.com/wp-content/uploads/2019/12/US-airforce-aircraft.2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.tiger {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: info;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsgkInctfBOLAyaw59T7cG4mw4o0hHwDayFK4t-obtkJxSe31YIENXNsxEoEPW6FvW_kU&usqp=CAU");
+  background-size: cover;
+  background-position: center;
+}
+
+.building {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: comment;
+  background-image: url("https://i.guim.co.uk/img/media/ac01822e1237b350779e9e41ab69c8bcc8d292ea/0_0_6016_3611/master/6016.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e8ed1dcb5b915acb79446d4bf5202eac");
+  background-size: cover;
+  background-position: center;
+}
+
+.comment {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: tag;
+  background-image: url("https://www.ledgerinsights.com/wp-content/uploads/2019/12/US-airforce-aircraft.2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.album {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: album;
+  background-image: url("https://www.ledgerinsights.com/wp-content/uploads/2019/12/US-airforce-aircraft.2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.rotate {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: rotate;
+  background-image: url("https://www.ledgerinsights.com/wp-content/uploads/2019/12/US-airforce-aircraft.2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/*# sourceMappingURL=style.css.map */
