@@ -149,6 +149,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     p{
         text-align: center;
         font-family: 'Lato';
@@ -166,10 +167,67 @@ h3{
         color: #000000;
     }
     
-    position: absolute;
-    width: 390px;
-    height: 88px;
     margin-top: 30px;
-
+    height: 10vh;
     background: #CBC1B1;
+}
+@media only screen and (min-width: 480px) 
+{
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .nevim{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+        height: 60vh;
+        .txt-box
+        {
+            background: #7C7474;
+            opacity: 0.3;
+            h1{
+                margin-right: auto;
+                margin-top: auto;
+                font-family: Lato;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+                margin-top: 1.25rem;
+                text-align: right;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #F8F7EC;
+            }
+            .text{
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 0.813rem;
+                line-height: 1rem;
+                letter-spacing: 0.1em;
+                padding: 0.625rem;
+                color: #F8F7EC;
+            }
+            .bttn{
+                p{
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 0.688rem;
+                    line-height: 0.813rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: black;
+                    padding: 5px 20px;
+                }
+                background-color: #a19b98;
+                margin-bottom: 20px;  
+            }
+        }
+    }
+    
 }

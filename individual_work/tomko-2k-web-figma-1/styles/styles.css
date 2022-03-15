@@ -262,10 +262,9 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  width: 390px;
-  height: 88px;
+  width: 100%;
   margin-top: 30px;
+  height: 10vh;
   background: #CBC1B1;
 }
 
@@ -287,5 +286,72 @@ h3 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media only screen and (min-width: 480px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  .nevim {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 100%;
+    height: 60vh;
+  }
+  .nevim .txt-box {
+    background: #7C7474;
+    opacity: 0.3;
+  }
+  .nevim .txt-box h1 {
+    margin-right: auto;
+    margin-top: auto;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin-top: 1.25rem;
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #F8F7EC;
+  }
+  .nevim .txt-box .text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.813rem;
+    line-height: 1rem;
+    letter-spacing: 0.1em;
+    padding: 0.625rem;
+    color: #F8F7EC;
+  }
+  .nevim .txt-box .bttn {
+    background-color: #a19b98;
+    margin-bottom: 20px;
+  }
+  .nevim .txt-box .bttn p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.688rem;
+    line-height: 0.813rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: black;
+    padding: 5px 20px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
