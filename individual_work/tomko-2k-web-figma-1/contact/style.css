@@ -1,0 +1,34 @@
+.navbar {
+  width: 100vw;
+  height: 80px;
+}
+
+.bg-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  max-height: 80px;
+  background: #CBC1B1;
+}
+
+.bg-header .logo {
+  width: 80px;
+  height: 66.13px;
+  margin: 7px 40px 6.78px;
+  background: url("/tomko-2k-web-figma-1/images/logo.png");
+}
+
+.bg-header .burger-menu {
+  width: 30px;
+  height: 30px;
+  margin: 28px 40px 22px;
+  background: url("/tomko-2k-web-figma-1/images/burger-menu.svg");
+}
+/*# sourceMappingURL=style.css.map */
