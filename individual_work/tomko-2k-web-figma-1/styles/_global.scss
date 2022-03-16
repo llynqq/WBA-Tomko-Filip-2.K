@@ -1,0 +1,233 @@
+body{
+    background: #E5E5E5;
+    width: 100%;
+    height: 100%;
+}
+
+.txt-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 12.5rem;
+    margin: auto;
+    margin-top: 3.125rem;
+    background: #7C7474;
+    h1{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        margin-top: 1.25rem;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #F8F7EC;
+    }
+    .text{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.813rem;
+        line-height: 1rem;
+        letter-spacing: 0.1em;
+        padding: 0.625rem;
+        color: #F8F7EC;
+    }
+    .bttn{
+        p{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 0.688rem;
+            line-height: 0.813rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: black;
+            padding: 5px 20px;
+        }
+        background-color: #a19b98;
+        margin-bottom: 20px;  
+    }
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 50px;
+    
+    .head2{
+        /* H2 */
+        text-align: center;
+        position: absolute;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #000000;
+    
+    }
+
+}
+.trips{
+    display: grid;
+    margin-top: 95px;
+    margin-left: 40px;
+    margin-right: 1rem;
+    grid-template-columns: 0.5fr 1.5fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+    grid-template-areas: 
+            "trip1-pic trip1-text"
+            "trip2-pic trip2-text"
+            "trip3-pic trip3-text";
+    .trip1-pic{
+        background-image: url("/tomko-2k-web-figma-1/images/madeira.png");
+        width: 117.2px;
+        height: 117.2px;
+        grid-area: trip1-pic;
+    }
+    .trip2-pic{
+        background-image: url("/tomko-2k-web-figma-1/images/sardinie.png");
+        width: 117.2px;
+        height: 117.2px;
+        grid-area: trip2-pic;
+    }
+    .trip3-pic{
+        background-image: url("/tomko-2k-web-figma-1/images/kypr.png");
+        width: 117.2px;
+        height: 117.2px;
+        grid-area: trip3-pic;
+    }
+    .trip1-text{
+        grid-area: trip1-text;
+        @include font-text;
+    }
+    .trip2-text{
+        grid-area: trip2-text;
+        @include font-text;
+    }
+    .trip3-text{
+        grid-area: trip3-text;
+        @include font-text;
+    }
+}
+h3{
+    @include font-h3;
+}
+.center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .bttn2{
+        text-align: center;
+        background-color: #7b7474;
+        width: 120px;
+        height: 25px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.688rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: white;
+        padding-top: 10px; 
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    p{
+        text-align: center;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 160%;
+        /* or 19px */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        color: #000000;
+    }
+    
+    margin-top: 30px;
+    height: 10vh;
+    background: #CBC1B1;
+}
+@media only screen and (min-width: 480px) 
+{
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .nevim{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+        height: 60vh;
+        .txt-box
+        {
+            background: #7C7474;
+            opacity: 0.3;
+            h1{
+                margin-right: auto;
+                margin-top: auto;
+                font-family: Lato;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+                margin-top: 1.25rem;
+                text-align: right;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #F8F7EC;
+            }
+            .text{
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 0.813rem;
+                line-height: 1rem;
+                letter-spacing: 0.1em;
+                padding: 0.625rem;
+                color: #F8F7EC;
+            }
+            .bttn{
+                p{
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 0.688rem;
+                    line-height: 0.813rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: black;
+                    padding: 5px 20px;
+                }
+                background-color: #a19b98;
+                margin-bottom: 20px;  
+            }
+        }
+    }
+    
+}

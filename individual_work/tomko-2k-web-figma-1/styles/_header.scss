@@ -1,0 +1,24 @@
+.navbar{
+    width: 100vw;
+    height: 80px;
+}
+.bg-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    max-height: 80px;
+    background: #CBC1B1;
+    .logo{
+        width: 80px;
+        height: 66.13px;
+        margin: 7px 40px 6.78px;
+        background: url("/tomko-2k-web-figma-1/images/logo.png");
+    }
+    .burger-menu{
+        width: 30px;
+        height: 30px;
+        margin: 28px 40px 22px;
+        background: url("/tomko-2k-web-figma-1/images/burger-menu.svg");
+    }
+}
