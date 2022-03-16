@@ -49,7 +49,7 @@
   background: url("/tomko-2k-web-figma-1/images/burger-menu.svg");
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 480px) {
   .bg-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -381,7 +381,7 @@ h3 {
   color: #000000;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 480px) {
   .flex {
     height: 100vh;
     width: 100vw;

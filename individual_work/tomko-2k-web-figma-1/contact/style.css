@@ -1,6 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
   width: 100vw;
   height: 80px;
+}
+
+.rect1 {
+  display: none;
+}
+
+.rect2 {
+  display: none;
+}
+
+.rect3 {
+  display: none;
 }
 
 .bg-header {
@@ -30,5 +47,438 @@
   height: 30px;
   margin: 28px 40px 22px;
   background: url("/tomko-2k-web-figma-1/images/burger-menu.svg");
+}
+
+@media screen and (min-width: 480px) {
+  .bg-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 100%;
+    height: 150px;
+    background: #CBC1B1;
+    gap: 1rem;
+    margin-bottom: 5rem;
+  }
+  .bg-header .logo {
+    margin: 7px 40% 6.78px 40px;
+    background: url("/tomko-2k-web-figma-1/images/logo.png");
+  }
+  .bg-header .rect1 {
+    display: block;
+  }
+  .bg-header .rect1 p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .bg-header .rect2 {
+    display: block;
+    padding: 1rem 2rem 1rem 2rem;
+    background: #b1aaa0;
+  }
+  .bg-header .rect2 p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .bg-header .rect3 {
+    display: block;
+  }
+  .bg-header .rect3 p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .bg-header .burger-menu {
+    display: none;
+  }
+}
+
+body {
+  background: #E5E5E5;
+  width: 100vw;
+  height: 100vh;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 1fr;
+      grid-template-columns: 0.5fr 1fr;
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 3rem;
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
+      grid-template-areas: "p1 t1" "p2 t2" "p3 t3" "p4 t4" "p5 t5" "p6 t6";
+}
+
+.grid .p1 {
+  background-image: url("/tomko-2k-web-figma-1/images/coronavirus.svg");
+  width: 50px;
+  height: 49.82px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: p1;
+}
+
+.grid .p2 {
+  background-image: url("/tomko-2k-web-figma-1/images/luggage.svg");
+  width: 50px;
+  height: 49.82px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: p2;
+}
+
+.grid .p3 {
+  background-image: url("/tomko-2k-web-figma-1/images/sale.svg");
+  width: 50px;
+  height: 49.82px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: p3;
+}
+
+.grid .p4 {
+  background-image: url("/tomko-2k-web-figma-1/images/doc 1.svg");
+  width: 50px;
+  height: 49.82px;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: p4;
+}
+
+.grid .p5 {
+  background-image: url("/tomko-2k-web-figma-1/images/doc 1.svg");
+  width: 50px;
+  height: 49.82px;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: p5;
+}
+
+.grid .p6 {
+  background-image: url("/tomko-2k-web-figma-1/images/doc 1.svg");
+  width: 50px;
+  height: 49.82px;
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: p6;
+}
+
+.grid .t1 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: t1;
+}
+
+.grid .t2 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: t2;
+}
+
+.grid .t3 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: t3;
+}
+
+.grid .t4 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: t4;
+}
+
+.grid .t5 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: t5;
+}
+
+.grid .t6 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: t6;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  height: 10vh;
+  background: #CBC1B1;
+}
+
+.footer p {
+  text-align: center;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@media screen and (min-width: 480px) {
+  .flex {
+    width: 100%;
+    height: 70%;
+  }
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0rem;
+    grid-row-gap: 3rem;
+    justify-content: center;
+    align-content: center;
+        grid-template-areas: "p1 t1 p2 t2 p3 t3" "p4 t4 p5 t5 p6 t6";
+  }
+  .grid .p1 {
+    background-image: url("/tomko-2k-web-figma-1/images/coronavirus.svg");
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .grid .p2 {
+    background-image: url("/tomko-2k-web-figma-1/images/luggage.svg");
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .grid .p3 {
+    background-image: url("/tomko-2k-web-figma-1/images/sale.svg");
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .grid .p4 {
+    background-image: url("/tomko-2k-web-figma-1/images/doc 1.svg");
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .grid .p5 {
+    background-image: url("/tomko-2k-web-figma-1/images/doc 1.svg");
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .grid .p6 {
+    background-image: url("/tomko-2k-web-figma-1/images/doc 1.svg");
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .grid .t1 {
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: t1;
+  }
+  .grid .t2 {
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: t2;
+  }
+  .grid .t3 {
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    grid-area: t3;
+  }
+  .grid .t4 {
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: t4;
+  }
+  .grid .t5 {
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    grid-area: t5;
+  }
+  .grid .t6 {
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    -ms-grid-row: 2;
+    -ms-grid-column: 6;
+    grid-area: t6;
+  }
+  .footer {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+  .footer p {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

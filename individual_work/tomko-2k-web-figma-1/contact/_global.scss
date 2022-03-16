@@ -1,0 +1,217 @@
+body{
+    background: #E5E5E5;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 3rem;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+    grid-template-areas: 
+            "p1 t1"
+            "p2 t2"
+            "p3 t3"
+            "p4 t4"
+            "p5 t5"
+            "p6 t6";
+    .p1{
+        background-image: url("/tomko-2k-web-figma-1/images/coronavirus.svg");
+        width: 50px;
+        height: 49.82px;
+        grid-area: p1;
+    }
+    .p2{
+        background-image: url("/tomko-2k-web-figma-1/images/luggage.svg");
+        width: 50px;
+        height: 49.82px;
+        grid-area: p2;
+    }
+    .p3{
+        background-image: url("/tomko-2k-web-figma-1/images/sale.svg");
+        width: 50px;
+        height: 49.82px;
+        grid-area: p3;
+    }
+    .p4{
+        background-image: url("/tomko-2k-web-figma-1/images/doc\ 1.svg");
+        width: 50px;
+        height: 49.82px;
+        grid-area: p4;
+    }
+    .p5{
+        background-image: url("/tomko-2k-web-figma-1/images/doc\ 1.svg");
+        width: 50px;
+        height: 49.82px;
+        grid-area: p5;
+    }
+    .p6{
+        background-image: url("/tomko-2k-web-figma-1/images/doc\ 1.svg");
+        width: 50px;
+        height: 49.82px;
+        grid-area: p6;
+    }
+    .t1{
+        @include font;
+        grid-area: t1;
+    }
+    .t2{
+        @include font;
+        grid-area: t2;
+    }
+    .t3{
+        @include font;
+        grid-area: t3;
+    }
+    .t4{
+        @include font;
+        grid-area: t4;
+    }
+    .t5{
+        @include font;
+        grid-area: t5;
+    }
+    .t6{
+        @include font;
+        grid-area: t6;
+    }
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    p{
+        text-align: center;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 160%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        color: #000000;
+    }
+    
+    margin-top: 30px;
+    height: 10vh;
+    background: #CBC1B1;
+}
+
+@media screen and (min-width: 480px) {
+    .flex{
+        width: 100%;
+        height: 70%;
+    }
+    .grid{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 80%;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0rem;
+        grid-row-gap: 3rem;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas: 
+            "p1 t1 p2 t2 p3 t3"
+            "p4 t4 p5 t5 p6 t6";
+        .p1{
+            background-image: url("/tomko-2k-web-figma-1/images/coronavirus.svg");
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .p2{
+            background-image: url("/tomko-2k-web-figma-1/images/luggage.svg");
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .p3{
+            background-image: url("/tomko-2k-web-figma-1/images/sale.svg");
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .p4{
+            background-image: url("/tomko-2k-web-figma-1/images/doc\ 1.svg");
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;        
+        }
+        .p5{
+            background-image: url("/tomko-2k-web-figma-1/images/doc\ 1.svg");
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .p6{
+            background-image: url("/tomko-2k-web-figma-1/images/doc\ 1.svg");
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .t1{
+            @include font2;
+            grid-area: t1;
+        }
+        .t2{
+            @include font2;
+            grid-area: t2;
+        }
+        .t3{
+            @include font2;
+            grid-area: t3;
+        }
+        .t4{
+            @include font2;
+            grid-area: t4;
+        }
+        .t5{
+            @include font2;
+            grid-area: t5;
+        }
+        .t6{
+            @include font2;
+            grid-area: t6;
+        }
+    }
+    
+    .footer{
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        p{
+            font-size: 1.5rem;
+        }
+    }
+}
