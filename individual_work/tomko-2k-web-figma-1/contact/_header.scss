@@ -1,0 +1,92 @@
+.navbar{
+    width: 100vw;
+    height: 80px;
+}
+.bg-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    max-height: 80px;
+    background: #CBC1B1;
+    .rect1{display: none;}
+    .rect2{display: none;}
+    .rect3{display: none;}
+    .logo{
+        width: 80px;
+        height: 66.13px;
+        margin: 7px 40px 6.78px;
+        background: url("/tomko-2k-web-figma-1/images/logo.png");
+    }
+    .burger-menu{
+        width: 30px;
+        height: 30px;
+        margin: 28px 40px 22px;
+        background: url("/tomko-2k-web-figma-1/images/burger-menu.svg");
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .bg-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: 150px;
+        background: #CBC1B1;
+        gap: 1rem;
+        margin-bottom: 5rem;
+        .logo{
+            margin: 7px 40% 6.78px 40px;
+            background: url("/tomko-2k-web-figma-1/images/logo.png");
+        }
+        .rect1{
+            display: block;
+            padding: 1rem 2rem 1rem 2rem;
+            background: #b1aaa0;
+            p{
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #000000;
+            }
+        }
+        .rect2{
+            display: block;
+            p{
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #000000;
+            }
+        }
+        .rect3{
+            display: block;
+            p{
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #000000;
+            }
+        }
+        .burger-menu{
+            display: none;
+        }
+    }
+    
+}
