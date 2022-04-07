@@ -24,10 +24,11 @@
         justify-content: center;
         align-items: start;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         grid-column-gap: 0rem;
-        grid-row-gap: 2rem;
+        grid-row-gap: 0rem;
         width: 70%;
+        margin-top: 1rem;
         grid-template-areas:
             "p1"
             "p2"
@@ -36,23 +37,33 @@
             "p5";
     
         .p1{
-            padding: 10px;
-            border-bottom: 5px solid black; 
+            // padding: 10px;
+            // border: 5px solid black;
+            padding: 0.5rem;
+            background-color: #cccac7;
             grid-area: "p1";
         }
         .p2{
             background-color: #cccac7;
+            padding: 0.5rem;
             grid-area: "p2";
         }
         .p3{
             background-color: #cccac7;
+            padding: 0.5rem;
             grid-area: "p3";
         }
         .p4{
             background-color: #cccac7;
+            padding: 0.5rem;
             grid-area: "p4";
         }
-        .p5 { grid-area: 6 / 1 / 9 / 2; }
+        .p5 { 
+            grid-area: "p5";
+            background-color: #cccac7;
+            padding: 2rem;
+        
+        }
 
     }
 }

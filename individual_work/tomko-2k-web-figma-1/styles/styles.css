@@ -239,7 +239,7 @@ body {
       grid-template-rows: 1fr 1fr 1fr;
   grid-column-gap: 2rem;
   grid-row-gap: 3rem;
-      grid-template-areas: "trip1-pic trip1-text" "trip2-pic trip2-text" "trip3-pic trip3-text";
+      grid-template-areas: "trip1-pic trip1-text" "trip2-pic trip2-text" "trip3-pic trip3-text";
 }
 
 .trips .trip1-pic {
@@ -442,7 +442,7 @@ h3 {
     grid-row-gap: 0rem;
     margin-left: 10%;
     margin-right: 10%;
-        grid-template-areas: "trip1-pic trip2-pic trip3-pic" "trip1-text trip2-text trip3-text";
+        grid-template-areas: "trip1-pic trip2-pic trip3-pic" "trip1-text trip2-text trip3-text";
   }
   .trips .trip1-pic {
     background-image: url("/tomko-2k-web-figma-1/images/madeira.png");

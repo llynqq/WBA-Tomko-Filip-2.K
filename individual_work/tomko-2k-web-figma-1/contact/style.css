@@ -162,25 +162,48 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #cccac7;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: (1fr)[8];
-      grid-template-rows: repeat(8, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0rem;
-  grid-row-gap: 1rem;
+  grid-row-gap: 0rem;
   width: 70%;
+  margin-top: 1rem;
+      grid-template-areas: "p1" "p2" "p3" "p4" "p5";
+}
+
+.middle .grid .p1 {
+  padding: 0.5rem;
+  background-color: #cccac7;
+  grid-area: "p1";
+}
+
+.middle .grid .p2 {
+  background-color: #cccac7;
+  padding: 0.5rem;
+  grid-area: "p2";
+}
+
+.middle .grid .p3 {
+  background-color: #cccac7;
+  padding: 0.5rem;
+  grid-area: "p3";
+}
+
+.middle .grid .p4 {
+  background-color: #cccac7;
+  padding: 0.5rem;
+  grid-area: "p4";
 }
 
 .middle .grid .p5 {
-  -ms-grid-row: 6;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 6 / 1 / 9 / 2;
+  grid-area: "p5";
+  background-color: #cccac7;
+  padding: 2rem;
 }
 
 .center {
