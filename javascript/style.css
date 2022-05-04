@@ -1,0 +1,19 @@
+.flexbox{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+p{
+    display: none;
+    border: 2px;
+    padding: 50px;
+
+}
+p.border{
+    border: 5px solid orange;
+}
+.show{
+    display: block
+}
